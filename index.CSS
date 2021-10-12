@@ -1,0 +1,16 @@
+h3 {
+    font-family: cursive, brush script M7;
+    background-color: lightblue;
+    width: 300px;
+    border: 5px solid green;
+    padding: 15px;
+    margin: 30px;
+    
+  }
+  div {
+    font-family: cursive, brush script M7;
+    width: 200px;
+     border: 5px solid red;
+    padding: 15px;
+    margin: 30px;
+    }
