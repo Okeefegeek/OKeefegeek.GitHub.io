@@ -1,6 +1,10 @@
-h3 {
+html {
+    background-color: Aqua;
+    
+  }
+  h3 {
     font-family: cursive, brush script M7;
-    background-color: lightblue;
+    background-color: orange;
     width: 300px;
     border: 5px solid green;
     padding: 15px;
@@ -8,9 +12,16 @@ h3 {
     
   }
   div {
+    background-color: orange;
     font-family: cursive, brush script M7;
     width: 200px;
      border: 5px solid red;
     padding: 15px;
     margin: 30px;
     }
+  h4 {
+    
+    font-family: cursive, brush script M7;
+    
+  }
+  
