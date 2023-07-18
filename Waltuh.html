@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html {
+    background-color: black;
+    
+}
+
+div {
+    text-align:center;
+}
+button:hover {
+   width: 100px;
+   height: 90px;
+    
+}
+  </style>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<title>Waltuh</title>
+<meta charset="UTF-8">
+</head>
+<body>
+    <marquee direction="right"><img src= "https://media1.s-nbcnews.com/i/streams/2013/August/130808/6C8558749-130808-walter-white-tease.jpg"/></marquee>
+    <div class= "Bleep-Blorp">
+    <button onclick="sound()">Important Button</button>
+    </div>
+<script>
+function sound(){
+     var snd = new Audio('Breaking-Bad.mp3')//wav is also supported
+     snd.play()//plays the sound
+}
+</script>
+</body>
+</html>
