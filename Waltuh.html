@@ -6,7 +6,7 @@
     
 }
 
-div {
+#Bleep-Blorp {
     text-align:center;
 }
 button:hover {
@@ -15,6 +15,9 @@ button:hover {
 }
     img {
       width: 50%;
+    }
+    #Bong {
+      text-align: left;
     }
   </style>
     <head>
@@ -31,6 +34,9 @@ button:hover {
       <br>
       <button onclick="soundTwo()">Key Dialogue</button>
     </div>
+  <div class= "Bong">
+    <button onclick="soundThree()"><img src= "https://upload.wikimedia.org/wikipedia/en/c/c6/Jesse_Pinkman_S5B.png"/></button>
+  </div>
 <script>
 function sound(){
      var snd = new Audio('Breaking-Bad.mp3')
@@ -39,6 +45,10 @@ function sound(){
   function soundTwo(){
     var sndTwo = new Audio('waltuh.mp3')
     sndTwo.play()
+  }
+  function soundThree(){
+    var sndThree = new Audio('JESSE.mp3')
+    sndThree.play()
   }
 </script>
 </body>
