@@ -29,14 +29,16 @@ button:hover {
     <button onclick="sound()">Important Button</button>
       <br>
       <button onclick="window.location.href='https://breakingbad.fandom.com/wiki/Breaking_Bad_Wiki';">More Info</button>
+      <br>
+      <button onclick="soundTwo()">Key Dialogue</button>
     </div>
 <script>
 function sound(){
-     var snd = new Audio('Breaking-Bad.mp3')//wav is also supported
+     var snd = new Audio('Breaking-Bad.mp3')
      snd.play()//plays the sound
 }
   function soundTwo(){
-    var sndTwo = new Audio('')
+    var sndTwo = new Audio('waltuh.mp3')
     sndTwo.play()
   }
 </script>
