@@ -51,7 +51,7 @@ button:hover {
       
       <button onclick="soundTwo()">Key Dialogue</button>
 
-      <button onclick="genRand()">Mystery Travel Button</button>
+      <button onclick="myFunc()">Mystery Travel Button</button>
       <br>
       <br>
       <br>
@@ -79,14 +79,8 @@ function sound(){
     var sndThree = new Audio('JESSE.mp3')
     sndThree.play()
   }
-  function genRand(){
-   var x = Math.floor(Math.random() * 2);
-    if (upperbound == 1) {
-     window.location="http://www.savewalterwhite.com/";
-    }
-    else {
-      window.location="http://www.lphishiring.com/";
-    }
+  function myFunc(){
+  location.href("http://www.savewalterwhite.com/");
   }
 </script>
 </body>
