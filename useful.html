@@ -6,8 +6,11 @@
     }
     .beep {
       background-color: white;
-      border: 10px solid black;
+      border: 5px solid black;
       border-style: dashed;
+      height: 500px;
+      width: 500px;
+      text-align: center;
     }
     button{
       box-shadow: 10px 5px 5px black;
@@ -21,6 +24,11 @@
       background-color: white;
       font-family: 'Courier New', monospace;
     }
+    a {
+      font-family: 'Courier New', monospace;
+      color: black;
+      font-size: 20px;
+    }
   </style>
 <head>
 <meta charset="UTF-8"/>
@@ -29,13 +37,17 @@
   <body>
     <div class= "Bop">
    <center> <h1><u>The Useful Site Generator</u></h1> </center>
-    <center><button onclick="useFunc()">Travel Button</button></center>
+    <center><button onclick="useFunc(); player()">Travel Button</button></center>
     </div>
     <div class="beep">
-<a href="waltuh.html">Useful link (in a different way).</a>
+<center><a href="waltuh.html">Useful link (in a different way).</a></center>
     </div>
     <!--Website Generating Code!-->
     <script type="text/javascript">
+      function player() {
+        var snd = new Audio('CLICK.mp3')
+     snd.play()
+      }
       function useFunc(){
         var x = Math.floor(Math.random() * 7);
     if (x == 1) {
