@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html {
+    background-image: url('https://img1.picmix.com/output/stamp/normal/7/1/8/3/1123817_ec41b.gif');
+    }
+    button{
+      box-shadow: 10px 5px 5px black;
+      width: 400px;
+      height: 400px;
+    }
+    button:active {
+       transform: translateY(4px);
+    }
+  </style>
+<head>
+<meta charset="UTF-8"/>
+  <title>The Useful Web Button</title>
+  </head>
+  <body>
+    <h1><u>The Useful Site Generator</u></h1>
+    <button onclick="useFunc()">Travel Button</button>
+    <!--Website Generating Code!-->
+    <script>
+      function useFunc(){
+        var x = Math.floor(Math.random() * 7);
+    if (x == 1) {
+    window.location.replace("https://www.komen.org/");
+    }
+      else if (x == 2) {
+      window.location.replace("https://diabetesfoundationinc.org/");
+    }
+      else if (x == 3){
+      window.location.replace("https://www.samhsa.gov/find-help/national-helpline");
+    }
+        else if (x == 4) {
+        window.location.replace("https://mentalhealthfoundation.org/");
+      }
+          else if (x == 5) {
+          window.location.replace("https://aldf.org/article/laws-that-protect-animals/");
+        }
+            else if (x == 6) {
+            window.location.replace("https://duckduckgo.com/");
+          }
+              else {
+      window.location.replace("https://www.indeed.com/");
+    }
+      }
+    </script>
+  </body>
+</html>
