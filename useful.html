@@ -6,6 +6,8 @@
     }
     button{
       box-shadow: 10px 5px 5px black;
+      width: 350px;
+      height: 400px;
     }
     button:active {
        transform: translateY(4px);
@@ -17,9 +19,9 @@
   </head>
   <body>
    <center> <h1><u>The Useful Site Generator</u></h1> </center>
-    <center><button style="width: 50%; height: 50%;" onclick="useFunc()">Travel Button</button></center>
+    <center><button onclick="useFunc()">Travel Button</button></center>
     <!--Website Generating Code!-->
-    <script>
+    <script type="text/javascript">
       function useFunc(){
         var x = Math.floor(Math.random() * 7);
     if (x == 1) {
@@ -44,6 +46,10 @@
       window.location.replace("https://www.indeed.com/");
     }
       }
+      function alerty(){
+         alert('Welcome, friend.');
+        }
+      window.onload = alerty;
     </script>
   </body>
 </html>
