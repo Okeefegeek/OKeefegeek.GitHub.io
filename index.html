@@ -159,6 +159,7 @@
       function alerty(){
         var msg = new SpeechSynthesisUtterance();
         msg.text = "Enjoy Your Trip";
+        msg.lang = 'en';
         window.speechSynthesis.speak(msg);
         }
       window.onload(alerty);
