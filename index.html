@@ -157,6 +157,9 @@
     }
       }
       function alerty(){
+        if (!"speechSynthesis" in window) {
+          alert("Sorry, your browser does not support text to speech");
+        }
         var msg = new SpeechSynthesisUtterance();
         msg.text = "Enjoy Your Adventure";
         msg.lang = 'en';
