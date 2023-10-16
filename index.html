@@ -69,7 +69,7 @@
        <br>
        <br>
        <br>
-    <center><button onclick="useFunc(); player()" target="_blank">Travel Button</button></center>
+    <center><button onclick="useFunc(); alerty()" target="_blank">Travel Button</button></center>
     </div>
    
     <!--Website Generating Code!-->
@@ -157,17 +157,12 @@
     }
       }
       function alerty(){
-        if ('speechSynthesis' in window) {
- // Speech Synthesis supported 
-}else{
-  // Speech Synthesis Not Supported
-  alert("Welcome, Friend");
-}
         var msg = new SpeechSynthesisUtterance();
-        msg.text = "Welcome, friend";
+        msg.text = "Travel Button";
         window.speechSynthesis.speak(msg);
         }
-      window.onload = alerty;
+      window.onload(alerty);
+     
     </script>
   </body>
 </html>
