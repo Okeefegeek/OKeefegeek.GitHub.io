@@ -162,7 +162,8 @@
         }
         var msg = new SpeechSynthesisUtterance();
         var voices = window.speechSynthesis.getVoices();
-        msg.voice = voices[10];
+        msg.voice = voices[5];
+        msg.rate = 5;
         msg.text = "Enjoy Your Adventure";
         msg.lang = 'en';
         window.speechSynthesis.speak(msg);
