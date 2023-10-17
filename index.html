@@ -161,12 +161,7 @@
           alert("Sorry, your browser does not support text to speech");
         }
         var msg = new SpeechSynthesisUtterance();
-        var voices = window.speechSynthesis.getVoices();
-        speechSynthesis.getVoices().forEach(function(voice) {
-  console.log(voice.name, voice.default ? voice.default :'');
-});
-        msg.voice = voices[2];
-        msg.rate = 1.5;
+        msg.rate = 2;
         msg.pitch = 0;
         msg.text = "Enjoy Your Adventure";
         msg.lang = 'en';
