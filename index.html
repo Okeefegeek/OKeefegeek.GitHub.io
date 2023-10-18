@@ -62,7 +62,7 @@
   <title>The Useful Web Button</title>
   </head>
   <body>
-    <div class= "Bop">
+    <div id= "Bop">
    <center> <h1><u>The Useful Site Generator</u></h1> </center>
       <!--spacing!-->
        <br>
@@ -156,6 +156,7 @@
       window.open("https://www.indeed.com/");
     }
       }
+       document.getElementById("Bop").onload = function() {alerty()};
       function alerty(){
         if (!"speechSynthesis" in window) {
           alert("Sorry, your browser does not support text to speech");
@@ -167,7 +168,7 @@
         msg.lang = 'en';
         window.speechSynthesis.speak(msg);
         }
-      window.onload(alerty);
+    
      
     </script>
   </body>
