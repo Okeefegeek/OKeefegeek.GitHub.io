@@ -156,10 +156,10 @@
       window.open("https://www.indeed.com/");
     }
       }
-       document.getElementById("Bop").onload = function() {alerty()};
+       
       function alerty(){
         if (!"speechSynthesis" in window) {
-          alert("Sorry, your browser does not support text to speech");
+          alert("Have a good time.");
         }
         var msg = new SpeechSynthesisUtterance();
         msg.rate = 1.7;
@@ -168,7 +168,17 @@
         msg.lang = 'en';
         window.speechSynthesis.speak(msg);
         }
-    
+    window.onload = ("load") => {
+       if (!"speechSynthesis" in window) {
+          alert("Have a good time.");
+        }
+        var msg = new SpeechSynthesisUtterance();
+        msg.rate = 1.7;
+        msg.pitch = 0;
+        msg.text = "Enjoy Your Adventure";
+        msg.lang = 'en';
+        window.speechSynthesis.speak(msg);
+    }
      
     </script>
   </body>
