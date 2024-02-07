@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/6802/6802191.png">
+  <title>Type or Else</title>
+  <link href="typeStyle.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <button id="restart" onclick="restart()">Restart</button>
+  <center>
+    <h1 id="device">What device are you on?</h1>
+    <button id="phone" onclick="phone()">Phone</button>
+    <button id="computer" onclick="computer()">Computer</button>
+    <h1 id="difficulty">What difficulty do you want</h1>
+
+    <div class="selectDiff">
+      <button id="easy" onclick="easy()">Easy</button>
+      <button id="medium" onclick="medium()">Medium</button>
+      <button id="hard" onclick="hard()">Hard</button>
+      <br>
+      <button id="go" onclick="goFunc(); timerCall()">Go!</button>
+    </div>
+    <div class="prompt">
+      <h2 id="prompter"></h2>
+    </div>
+    <div class="typer">
+      <input type="text" id="typebox">
+      </input>
+      <button id="enter" onclick="answer()">Enter!</button>
+    </div>
+    <br>
+    <progress value="0" max="3000" id="stop"></progress>
+  </center>
+  <center>
+    <div id="google_translate_element"></div>
+  </center>
+  <!-- Google Translate Code -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+<script src="typeScript.js"></script>
+
+</html>
