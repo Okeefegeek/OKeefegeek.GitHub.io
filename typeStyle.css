@@ -1,0 +1,34 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #EBEBB8;
+}
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+}
+button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+#typebox {
+  background-color: #F5F5DC;
+  width: 500px;
+  height: 50px;
+  font-size: 15px;
+}
+#restart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: purple;
+  color: white;
+  border-radius: 0px !important;
+}
+progress {
+  height: 30px;
+}
+#enter {
+  display: none;
+}
