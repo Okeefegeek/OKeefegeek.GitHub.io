@@ -129,8 +129,8 @@ function restart() {
 
 function goFunc() {
 
-     document.addEventListener('keydown', (e) => {
-       if (e.code === "Enter") {
+     document.addEventListener('keypress', function(event) {
+       if (event.key === "Enter") {
          answer();
        } 
      });
